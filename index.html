@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin học 12 | HTML & Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand"><span class="brand-icon">&lt;/&gt;</span><span>WEB<span class="brand-light">.NOTES</span></span></div>
+        <div class="topbar-status"><span class="status-dot"></span>TIN HỌC 12</div>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="sidebar-heading">EXPLORER</div>
+            <div class="folder-title">▾ TIN_HOC_12</div>
+            <nav class="navigation">
+                <a href="#bai7" class="nav-link active"><span class="file-icon">HTML</span> Bài 7</a>
+                <a href="#bai8" class="nav-link"><span class="file-icon">CSS</span> Bài 8</a>
+                <a href="#bai9" class="nav-link"><span class="file-icon">TAB</span> Bài 9</a>
+                <a href="#bai10" class="nav-link"><span class="file-icon">URL</span> Bài 10</a>
+                <a href="#bai11" class="nav-link"><span class="file-icon">MED</span> Bài 11</a>
+                <a href="#thanhvien" class="nav-link"><span class="file-icon">USR</span> Thành viên</a>
+            </nav>
+            <div class="sidebar-bottom">
+                <div class="mini-terminal">
+                    <div class="terminal-dots"><span></span><span></span><span></span></div>
+                    <p class="terminal-command">$ study --html</p>
+                    <p class="terminal-output">Knowledge loaded.</p>
+                    <p class="terminal-cursor">_</p>
+                </div>
+                <div class="sidebar-caption">HTML & WEB FUNDAMENTALS</div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="breadcrumb"><span>workspace</span><span>/</span><span>tin_hoc_12</span><span>/</span><span class="breadcrumb-current">notes.html</span></div>
+
+            <section class="hero">
+                <div class="hero-label"><span class="status-dot"></span>STUDY DOCUMENT / 2026</div>
+                <h1>TIN HỌC 12<span class="title-dot">.</span></h1>
+                <h2>HTML &amp; CẤU TRÚC TRANG WEB</h2>
+                <p class="hero-description">Tóm tắt kiến thức từ bài 7 đến bài 11.</p>
+                <div class="hero-tags"><span>HTML</span><span>CSS</span><span>HYPERLINK</span><span>MULTIMEDIA</span></div>
+                <div class="hero-decoration">&lt;html&gt;</div>
+            </section>
+
+            <section class="lesson" id="bai7">
+                <div class="section-heading"><div class="section-number">01</div><div><div class="section-label">FUNDAMENTALS</div><h2>Bài 7. HTML và cấu trúc trang web</h2></div></div>
+                <div class="content-card">
+                    <h3><span class="bullet"></span> HTML là gì?</h3>
+                    <p>HTML: Ngôn ngữ đánh dấu siêu văn bản, dùng để tạo cấu trúc và nội dung trang web, không phải ngôn ngữ lập trình.</p>
+                </div>
+                <div class="content-card">
+                    <h3><span class="bullet"></span> Cấu trúc cơ bản</h3>
+                    <div class="code-list">
+                        <div class="code-row"><code>&lt;!DOCTYPE html&gt;</code><span>Khai báo HTML5.</span></div>
+                        <div class="code-row"><code>&lt;html&gt;</code><span>Phần tử gốc.</span></div>
+                        <div class="code-row"><code>&lt;head&gt;</code><span>Chứa thông tin trang.</span></div>
+                        <div class="code-row"><code>&lt;body&gt;</code><span>Chứa nội dung hiển thị.</span></div>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <h3><span class="bullet"></span> Thẻ quan trọng</h3>
+                    <div class="tag-grid">
+                        <div class="tag-item"><code>&lt;h1&gt; đến &lt;h6&gt;</code><p>Tiêu đề lớn đến nhỏ.</p></div>
+                        <div class="tag-item"><code>&lt;p&gt;</code><p>Đoạn văn.</p></div>
+                        <div class="tag-item"><code>&lt;b&gt;, &lt;strong&gt;</code><p>In đậm.</p></div>
+                        <div class="tag-item"><code>&lt;i&gt;, &lt;em&gt;</code><p>In nghiêng.</p></div>
+                        <div class="tag-item"><code>&lt;br&gt;</code><p>Xuống dòng.</p></div>
+                        <div class="tag-item"><code>&lt;hr&gt;</code><p>Kẻ ngang.</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lesson" id="bai8">
+                <div class="section-heading"><div class="section-number">02</div><div><div class="section-label">TEXT FORMATTING</div><h2>Bài 8. Định dạng văn bản</h2></div></div>
+                <div class="content-card">
+                    <h3><span class="bullet"></span> Thuộc tính HTML</h3>
+                    <p>Thuộc tính HTML: Bổ sung thông tin cho thẻ, được viết trong thẻ mở.</p>
+                    <div class="sub-block">
+                        <h4>style: Định dạng trực tiếp.</h4>
+                        <div class="code-list">
+                            <div class="code-row"><code>color</code><span>Màu chữ.</span></div>
+                            <div class="code-row"><code>font-family</code><span>Phông chữ.</span></div>
+                            <div class="code-row"><code>font-size</code><span>Cỡ chữ.</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <h3><span class="bullet"></span> Thẻ quan trọng</h3>
+                    <div class="code-list">
+                        <div class="code-row"><code>&lt;p&gt;</code><span>Đoạn văn.</span></div>
+                        <div class="code-row"><code>&lt;div&gt;</code><span>Khối nội dung, thường bắt đầu dòng mới.</span></div>
+                        <div class="code-row"><code>&lt;span&gt;</code><span>Nội dung nội dòng, không tự xuống dòng.</span></div>
+                        <div class="code-row"><code>&lt;br&gt;</code><span>Xuống dòng.</span></div>
+                        <div class="code-row"><code>&lt;hr&gt;</code><span>Kẻ ngang.</span></div>
+                    </div>
+                </div>
+                <div class="note"><span class="note-icon">i</span>Nhiều thuộc tính trong style được ngăn cách bằng dấu ;.</div>
+            </section>
+
+            <section class="lesson" id="bai9">
+                <div class="section-heading"><div class="section-number">03</div><div><div class="section-label">DATA STRUCTURES</div><h2>Bài 9. Tạo danh sách, bảng</h2></div></div>
+                <div class="content-card">
+                    <h3><span class="bullet"></span> 1. Ba loại danh sách</h3>
+                    <div class="code-list">
+                        <div class="code-row"><code>&lt;ul&gt;</code><span>Danh sách không có thứ tự, dùng kí hiệu.</span></div>
+                        <div class="code-row"><code>&lt;ol&gt;</code><span>Danh sách có thứ tự, dùng số hoặc chữ. Thuộc tính type, start.</span></div>
+                        <div class="code-row"><code>&lt;dl&gt;</code><span>Danh sách mô tả.</span></div>
+                        <div class="code-row"><code>&lt;dt&gt;</code><span>Tên mục.</span></div>
+                        <div class="code-row"><code>&lt;dd&gt;</code><span>Nội dung mô tả.</span></div>
+                    </div>
+                    <p class="card-footnote">Có thể tạo danh sách lồng nhau.</p>
+                </div>
+                <div class="content-card">
+                    <h3><span class="bullet"></span> 2. Các thẻ tạo bảng</h3>
+                    <div class="table-wrap"><table><thead><tr><th>Thẻ</th><th>Chức năng</th></tr></thead><tbody>
+                        <tr><td><code>&lt;table&gt;</code></td><td>Tạo bảng</td></tr>
+                        <tr><td><code>&lt;tr&gt;</code></td><td>Tạo hàng</td></tr>
+                        <tr><td><code>&lt;td&gt;</code></td><td>Ô dữ liệu</td></tr>
+                        <tr><td><code>&lt;th&gt;</code></td><td>Ô tiêu đề</td></tr>
+                        <tr><td><code>&lt;caption&gt;</code></td><td>Tiêu đề bảng</td></tr>
+                    </tbody></table></div>
+                    <div class="sub-block"><div class="code-list">
+                        <div class="code-row"><code>border</code><span>Tạo viền.</span></div>
+                        <div class="code-row"><code>width, height</code><span>Chỉnh kích thước.</span></div>
+                        <div class="code-row"><code>colspan</code><span>Gộp ô theo chiều ngang.</span></div>
+                        <div class="code-row"><code>rowspan</code><span>Gộp ô theo chiều dọc.</span></div>
+                    </div></div>
+                </div>
+            </section>
+
+            <section class="lesson" id="bai10">
+                <div class="section-heading"><div class="section-number">04</div><div><div class="section-label">HYPERLINKS &amp; PATHS</div><h2>Bài 10. Siêu văn bản và đường dẫn</h2></div></div>
+                <div class="content-card">
+                    <h3><span class="bullet"></span> Khái niệm</h3>
+                    <p>Siêu văn bản (hypertext): Văn bản có thể chứa hình ảnh, âm thanh và siêu liên kết.</p>
+                    <p>Siêu liên kết (hyperlink): Liên kết đến trang hoặc tài nguyên khác.</p>
+                    <div class="code-example"><div class="code-example-label">CÚ PHÁP</div><code>&lt;a href="URL"&gt;Nội dung&lt;/a&gt;</code></div>
+                    <p>href: Chỉ định địa chỉ liên kết.</p>
+                </div>
+                <div class="content-card">
+                    <h3><span class="bullet"></span> Hai loại đường dẫn</h3>
+                    <div class="path-card"><div class="path-heading"><span class="path-symbol">01</span>Tuyệt đối</div><p>Có địa chỉ đầy đủ, thường gồm giao thức và tên miền.</p></div>
+                    <div class="path-card"><div class="path-heading"><span class="path-symbol">02</span>Tương đối</div><p>Xác định vị trí tệp dựa trên tệp hiện tại.</p>
+                        <div class="code-list path-list">
+                            <div class="code-row"><code>tenfile.html</code><span>Cùng thư mục.</span></div>
+                            <div class="code-row"><code>thumuc/tenfile.html</code><span>Thư mục con.</span></div>
+                            <div class="code-row"><code>../tenfile.html</code><span>Thư mục cấp trên.</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <h3><span class="bullet"></span> Liên kết trong cùng trang</h3>
+                    <div class="code-list">
+                        <div class="code-row"><code>id</code><span>Đặt id cho phần tử đích.</span></div>
+                        <div class="code-row"><code>href="#id"</code><span>Dùng để liên kết đến phần tử đó.</span></div>
+                    </div>
+                </div>
+                <div class="content-card"><h3><span class="bullet"></span> Liên kết bằng hình ảnh</h3><p>Đặt thẻ <code>&lt;img&gt;</code> bên trong thẻ <code>&lt;a&gt;</code>.</p></div>
+            </section>
+
+            <section class="lesson" id="bai11">
+                <div class="section-heading"><div class="section-number">05</div><div><div class="section-label">MULTIMEDIA</div><h2>Bài 11. Chèn tệp đa phương tiện và khung nội tuyến</h2></div></div>
+                <div class="content-card">
+                    <h3><span class="bullet"></span> Chèn ảnh</h3><p>Dùng thẻ <code>&lt;img&gt;</code>.</p>
+                    <div class="code-list">
+                        <div class="code-row"><code>src</code><span>Đường dẫn ảnh, thuộc tính bắt buộc.</span></div>
+                        <div class="code-row"><code>alt</code><span>Văn bản thay thế.</span></div>
+                        <div class="code-row"><code>width, height</code><span>Kích thước ảnh.</span></div>
+                    </div>
+                </div>
+                <div class="content-card"><h3><span class="bullet"></span> Chèn âm thanh</h3><p>Dùng <code>&lt;audio&gt;</code>.</p></div>
+                <div class="content-card">
+                    <h3><span class="bullet"></span> Chèn video</h3><p>Dùng <code>&lt;video&gt;</code>.</p>
+                    <div class="code-list">
+                        <div class="code-row"><code>controls</code><span>Hiện nút điều khiển.</span></div>
+                        <div class="code-row"><code>autoplay</code><span>Tự động phát.</span></div>
+                        <div class="code-row"><code>loop</code><span>Phát lặp lại.</span></div>
+                        <div class="code-row"><code>poster</code><span>Ảnh hiển thị trước khi video phát.</span></div>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <h3><span class="bullet"></span> Khung nội tuyến</h3><p>Dùng <code>&lt;iframe&gt;</code> để nhúng trang web hoặc tài nguyên khác.</p>
+                    <div class="code-list">
+                        <div class="code-row"><code>src</code><span>Đường dẫn nội dung.</span></div>
+                        <div class="code-row"><code>width, height</code><span>Kích thước khung.</span></div>
+                        <div class="code-row"><code>title</code><span>Mô tả khung.</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="important-section">
+                <div class="section-heading"><div class="section-number">!</div><div><div class="section-label">QUICK REFERENCE</div><h2>Những phần cần nhớ nhất để làm bài kiểm tra</h2></div></div>
+                <div class="important-grid">
+                    <div class="important-item"><code>&lt;ul&gt; ≠ &lt;ol&gt;</code></div>
+                    <div class="important-item"><code>&lt;td&gt; ≠ &lt;th&gt;</code></div>
+                    <div class="important-item"><code>colspan ≠ rowspan</code></div>
+                    <div class="important-item"><span>Đường dẫn tuyệt đối ≠ tương đối</span></div>
+                    <div class="important-item"><code>href</code><span>dùng cho liên kết còn</span><code>src</code><span>dùng để chỉ nguồn tài nguyên</span></div>
+                    <div class="important-item"><code>&lt;div&gt; ≠ &lt;span&gt;</code></div>
+                </div>
+            </section>
+
+            <section class="members-section" id="thanhvien">
+                <div class="section-heading"><div class="section-number">06</div><div><div class="section-label">PROJECT TEAM</div><h2>Thành viên</h2></div></div>
+                <div class="members-grid">
+                    <div class="member-card"><span class="member-index">01</span><span class="member-symbol">&gt;_</span><p>Hồ Quốc Huy</p></div>
+                    <div class="member-card"><span class="member-index">02</span><span class="member-symbol">&gt;_</span><p>Nguyễn Minh Phúc</p></div>
+                    <div class="member-card"><span class="member-index">03</span><span class="member-symbol">&gt;_</span><p>Phạm Minh Khoa</p></div>
+                    <div class="member-card"><span class="member-index">04</span><span class="member-symbol">&gt;_</span><p>Nguyễn Tùng Quân</p></div>
+                    <div class="member-card"><span class="member-index">05</span><span class="member-symbol">&gt;_</span><p>Nguyễn Anh Kiệt</p></div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-brand">&lt;/&gt; WEB.NOTES</div>
+                <div>TIN HỌC 12 <span class="footer-separator">/</span> HTML &amp; WEB</div>
+                <a href="#top" id="backToTop">BACK TO TOP ↑</a>
+            </footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
